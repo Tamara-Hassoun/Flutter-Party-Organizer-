@@ -1,0 +1,2668 @@
+{
+	"info": {
+		"_postman_id": "be9dee19-3081-49ce-a678-c6851f3179bf",
+		"name": "EventsApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Creat_Event",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|IEq1zodR1ZInvtq5nS5QaHlbdSUlO2H8otehba0Qb1492fbe",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "new year",
+									"type": "default"
+								},
+								{
+									"key": "type",
+									"value": "night event",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "200",
+									"type": "default"
+								},
+								{
+									"key": "location",
+									"value": "damas",
+									"type": "default"
+								},
+								{
+									"key": "Number_of_attendees",
+									"value": "200",
+									"type": "default"
+								},
+								{
+									"key": "date",
+									"value": "07-07-2025",
+									"type": "default"
+								},
+								{
+									"key": "images[]",
+									"type": "file",
+									"src": [
+										"/G:/me/العائله/5103_767505469.0.jpg",
+										"/G:/me/العائله/20150111_090457.jpg"
+									]
+								},
+								{
+									"key": "Number_of_tickets",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "safas",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/createEvent?",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"createEvent"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "numberOfSuppliers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|vYLzFBV6jNaM3g4PLxte0SOCCubHJPNpp5GecQWtd6c6af45",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/numberOfSuppliers",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"numberOfSuppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "numberOfUsers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|ribtLLI01vpBOXCuFy0lj57LJryvGgs93YdM1MhEc4b7089b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/numberOfUsers",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"numberOfUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "numberOfEvents",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|ribtLLI01vpBOXCuFy0lj57LJryvGgs93YdM1MhEc4b7089b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/numberOfEvents",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"numberOfEvents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userEventsWithTotalPayments",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|ECq0ojD6mXUvcUS2WJtgVLIYWsbtCBx1FFhGjIMje0513e2e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/userEventsWithTotalPayments",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"userEventsWithTotalPayments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeviewability",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|6wjIQaiVMuqRzRZmGMc2qlChvQsNxP1Qf2sX0zVk5b650fb7",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_event_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/changeviewability",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"changeviewability"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreatePlaces",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|LAiNh4X9yvtP7eujG8ZEMqmbqs28zXj8d578lU5sdc54df3f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "koko",
+									"type": "default"
+								},
+								{
+									"key": "parent_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "adress_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "200",
+									"type": "default"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "06666666666",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "adsvavas",
+									"type": "default"
+								},
+								{
+									"key": "tele",
+									"value": "@fsfaas",
+									"type": "default"
+								},
+								{
+									"key": "images[]",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/CreatePlaces",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"CreatePlaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createCategoryPlace",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|LAiNh4X9yvtP7eujG8ZEMqmbqs28zXj8d578lU5sdc54df3f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "vfiadvoads",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/createCategoryPlace",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"createCategoryPlace"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowAllUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|ribtLLI01vpBOXCuFy0lj57LJryvGgs93YdM1MhEc4b7089b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/ShowAllUser",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ShowAllUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|ribtLLI01vpBOXCuFy0lj57LJryvGgs93YdM1MhEc4b7089b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "6",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/DeleteUser",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"DeleteUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Both",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "PhoneNumberOremail",
+									"value": "ibrahem@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|jhnOjj3P2TBKtiGiwlg8VUe0UklZyuyIZW4a4e3K06b47a3c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_acounte",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "7|TvT9IC5cFaISijUFmKRemxWrHp3oTb08MoPAxaoAe68969ae",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/delete_acounte",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"delete_acounte"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showSonger",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/showSonger",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"showSonger"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showCar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/showCar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"showCar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showFood",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/showFood",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"showFood"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showPlaces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/showPlaces",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"showPlaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showDecorations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/showDecorations",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"showDecorations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showDress_and_makeups",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/showDress_and_makeups",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"showDress_and_makeups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_User_Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|P3ETczu7vjgCD96JrmtgiEo7DW4Gv5xpodmZBri7abdc815a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/get_User_Profile",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"get_User_Profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditUserProfile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|BesI3PlbPoazIkhKfttHo7KxCEwciIT1lqleJqNKd9d045cf",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "phone_number",
+									"value": "0976674877",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "old_password",
+									"value": "123",
+									"type": "default"
+								},
+								{
+									"key": "new_password",
+									"value": "1234",
+									"type": "default"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "1234",
+									"type": "default"
+								},
+								{
+									"key": "profile_image",
+									"type": "file",
+									"src": "/C:/Users/ProGamer/Pictures/Camera Roll/٥.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/edit_user_profile",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"edit_user_profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "query",
+									"value": "place",
+									"type": "default"
+								},
+								{
+									"key": "item",
+									"value": "dama",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showSelectItem",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "query",
+									"value": "place",
+									"type": "default"
+								},
+								{
+									"key": "id",
+									"value": "6",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/showSelectItem",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"showSelectItem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCategoriesPlace",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/getCategoriesPlace",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getCategoriesPlace"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowAllsonger",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/ShowAllsonger",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ShowAllsonger"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowAllDecorations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/ShowAllDecorations",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ShowAllDecorations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowAllCars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/ShowAllCars",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ShowAllCars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowAllFood",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/ShowAllFood",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ShowAllFood"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowAllDressAndMakeups",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/ShowAllDressAndMakeups",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ShowAllDressAndMakeups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowAllPlaces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/ShowAllPlaces",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ShowAllPlaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPost",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|UYhdrR0VWfcXeR672miUlVvtFkS0Ne9oEdSepsfk0748216b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "post",
+									"value": "ndvansvndsalvs",
+									"type": "default"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/createPost",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"createPost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePost",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|5JTHrTpg7A9nIgjasWZJWz8CviLE12OfYpnIThgHce55187c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "post",
+									"value": "qwergg",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/updatePost",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"updatePost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePost",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|rCyhxkHbUEBk4jOJt3AUB1KLH68ZLlEWBQr7uRdfae1a29a9",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/deletePost",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"deletePost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowAllPost",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/ShowAllPost",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ShowAllPost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCommentsPost",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|UYhdrR0VWfcXeR672miUlVvtFkS0Ne9oEdSepsfk0748216b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "post_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "comment",
+									"value": "rfgbsd",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/AddCommentsPost",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"AddCommentsPost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteComment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|UYhdrR0VWfcXeR672miUlVvtFkS0Ne9oEdSepsfk0748216b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/deleteComment",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"deleteComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateComment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|UYhdrR0VWfcXeR672miUlVvtFkS0Ne9oEdSepsfk0748216b",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "comment",
+									"value": "qweqwqwqwqwqwqw",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/updateComment",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"updateComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCommentsByPost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/getCommentsByPost",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getCommentsByPost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCommentsLast",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|103dTOGqwa4znP168FPSAZ93F7td0jTcOBgG4wiT7118c1ec",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_event_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "comment",
+									"value": "afsadsaxcac",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/AddCommentsLast",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"AddCommentsLast"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCommentlast",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|103dTOGqwa4znP168FPSAZ93F7td0jTcOBgG4wiT7118c1ec",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "comment",
+									"value": "qweqwqwqwqwqwqw",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/updateCommentlast",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"updateCommentlast"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCommentlast",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|103dTOGqwa4znP168FPSAZ93F7td0jTcOBgG4wiT7118c1ec",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/deleteCommentlast",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"deleteCommentlast"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCommentsByLast",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/getCommentsByLast",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getCommentsByLast"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCommentsRecent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|NVej1QZ9LBZdsx1rm7ec9omUPiYPUdVHKgB4TWuk0485135e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "event_comming_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "comment",
+									"value": "afsadsaxcac",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/AddCommentsRecent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"AddCommentsRecent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCommentRecent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|NVej1QZ9LBZdsx1rm7ec9omUPiYPUdVHKgB4TWuk0485135e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "default"
+								},
+								{
+									"key": "comment",
+									"value": "qweqwqwqwqwqwqw",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/updateCommentRecent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"updateCommentRecent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCommentRecent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|NVej1QZ9LBZdsx1rm7ec9omUPiYPUdVHKgB4TWuk0485135e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/deleteCommentRecent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"deleteCommentRecent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCommentsByRecent",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/getCommentsByRecent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getCommentsByRecent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rating",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|geuuj1wPjoD6RodcwxPBuViZW828tROtg1Nd2DB5364361ea",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "food",
+									"type": "default"
+								},
+								{
+									"key": "rating",
+									"value": "5",
+									"type": "default"
+								},
+								{
+									"key": "food_id",
+									"value": "40",
+									"type": "default"
+								},
+								{
+									"key": "place_id",
+									"value": "55",
+									"type": "default"
+								},
+								{
+									"key": "car_id",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "decoration_id",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "dress_and_makeup_id",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "songer_id",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "last_event_id",
+									"value": "3",
+									"type": "default"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rating",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rating"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ibrahem",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "broo20@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "0997337477",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "default"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456789",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/G:/me/العائله/٢٠١٨١١٢٣_٢٣٥٠٤٢.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "recentEvents",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/recent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"recent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "recentdetails",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/recentdetails",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"recentdetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lastEvent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/last",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"last"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addFavorite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|6tDuohxPn6exdk37xtnE22aTnMLgcJ4SAeVx0RoX95ec64f4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "place",
+									"type": "default"
+								},
+								{
+									"key": "food_id",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "place_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "decoration_id",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "drees_and_makeup_id",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "songer_id",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "car_id",
+									"value": "",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/addFavorite",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"addFavorite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createUserEvent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|yiMESU7H5zG03YwCbJUgCnLN0z5YqQsV0AkJSiSbeab606c2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "event_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "place_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "decoration_id",
+									"value": "4",
+									"type": "default"
+								},
+								{
+									"key": "food_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "drees_and_makeup_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "car_id",
+									"value": "3",
+									"type": "default"
+								},
+								{
+									"key": "songer_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "date",
+									"value": "07-07-2024",
+									"type": "default"
+								},
+								{
+									"key": "photography",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/createUserEvent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"createUserEvent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUserEvent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|yiMESU7H5zG03YwCbJUgCnLN0z5YqQsV0AkJSiSbeab606c2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_event_id",
+									"value": "3",
+									"type": "default"
+								},
+								{
+									"key": "event_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "place_id",
+									"value": "7",
+									"type": "default"
+								},
+								{
+									"key": "decoration_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "food_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "drees_and_makeup_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "car_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "songer_id",
+									"value": "3",
+									"type": "default"
+								},
+								{
+									"key": "photography",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/updateUserEvent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"updateUserEvent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFavoriteItems",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|6tDuohxPn6exdk37xtnE22aTnMLgcJ4SAeVx0RoX95ec64f4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/getFavoriteItems",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getFavoriteItems"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmycard",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|GpBUU3MtHTDKYGXnOOXhrCUQDidcGMhzvnujp07Gc9afc731",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/getmycard",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getmycard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmyevent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|yTomMwSdBVCkwPTWDJOIpN8XIBn1f5OARaaCMFro6b127e49",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/getmyevent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getmyevent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bookTicket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|mw91ovFYnGHR0hRIQpKAib95PlxuCB1U5elA8QvI11e3de88",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "event_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "number_of_tickets",
+									"value": "10",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/bookTicket",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bookTicket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteEventFromCart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|yiMESU7H5zG03YwCbJUgCnLN0z5YqQsV0AkJSiSbeab606c2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_event_id",
+									"value": "3",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/deleteEventFromCart",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"deleteEventFromCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteEventFromMyEvent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|jxgnCgLLJKr06CrkPFCgMbdnKRC5bA5Vkm7wGmT6680224b3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_event_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/deleteEventFromMyEvent",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"deleteEventFromMyEvent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_event_id",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/verification",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"verification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteFromFavorite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|jxgnCgLLJKr06CrkPFCgMbdnKRC5bA5Vkm7wGmT6680224b3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "query",
+									"value": "place",
+									"type": "default"
+								},
+								{
+									"key": "favId",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/deleteFromFavorite",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"deleteFromFavorite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lastdetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buycoins",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|yiMESU7H5zG03YwCbJUgCnLN0z5YqQsV0AkJSiSbeab606c2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "yourmoney",
+									"value": "1000000",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/buycoins",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"buycoins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showUserCoins",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|yiMESU7H5zG03YwCbJUgCnLN0z5YqQsV0AkJSiSbeab606c2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/showUserCoins",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"showUserCoins"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
